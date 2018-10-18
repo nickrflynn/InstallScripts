@@ -477,6 +477,7 @@ function Add-InstallationSetting
         [Parameter(Mandatory=$true)]
         [string] $configSetting,
         [Parameter(Mandatory=$true)]
+        [AllowEmptyString()]
         [string] $configValue,
         [ValidateScript({
             if (!(Test-Path $_)) {
